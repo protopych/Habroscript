@@ -626,7 +626,7 @@
             </div>
             <div class="habr-bl-options">
                 <label>
-                    <span>Скрыть все статьи компаний</span>
+                    <span>Скрывать все статьи компаний</span>
                     <input type="checkbox" class="habr-bl-hide-companies">
                 </label>
             </div>
