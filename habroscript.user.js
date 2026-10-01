@@ -297,13 +297,13 @@
     function updateHideButton(btn, name, isToggleMode) {
         const isHidden = isBlacklisted(name);
         if (isToggleMode) {
-            btn.textContent = isHidden ? 'Автор в чёрном списке — вернуть' : 'Скрыть статьи автора';
+            btn.textContent = isHidden ? 'Автор в чёрном списке — вернуть' : 'Скрывать статьи автора';
             btn.title = isHidden
                 ? `Убрать «${name}» из чёрного списка`
                 : `Добавить «${name}» в чёрный список`;
             btn.classList.toggle('habr-bl-is-hidden', isHidden);
         } else {
-            btn.textContent = 'Скрыть статьи автора';
+            btn.textContent = 'Скрывать статьи автора';
             btn.title = `Добавить «${name}» в чёрный список`;
             btn.classList.remove('habr-bl-is-hidden');
         }
@@ -349,7 +349,7 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'btn btn_transparent btn_small tm-button_color-horizon habr-bl-company-btn';
-        btn.textContent = 'Скрыть статьи компании';
+        btn.textContent = 'Скрывать статьи компании';
         btn.title = `Добавить компанию «${companyName}» в чёрный список`;
 
         btn.addEventListener('click', (e) => {
@@ -448,7 +448,7 @@
     // ---------- company toggle button (shared) ----------
     function updateCompanyToggleButton(btn, companyName) {
         const isHidden = isBlacklisted(companyName);
-        btn.textContent = isHidden ? 'Компания в чёрном списке — вернуть' : 'Скрыть статьи компании';
+        btn.textContent = isHidden ? 'Компания в чёрном списке — вернуть' : 'Скрывать статьи компании';
         btn.title = isHidden
             ? `Убрать «${companyName}» из чёрного списка`
             : `Добавить «${companyName}» в чёрный список`;
