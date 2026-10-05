@@ -509,7 +509,7 @@
 
     // ---------- company article reading page ----------
     function processReadingCompanyCard() {
-        const m = location.pathname.match(/^\/ru\/companies\/([^\/]+)\/articles\/\d+\/?$/);
+        const m = location.pathname.match(/^\/ru\/companies\/([^\/]+)\/(articles|news)\/\d+\/?$/);
         if (!m) return;
 
         const company = decodeURIComponent(m[1]);
